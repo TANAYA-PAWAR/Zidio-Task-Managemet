@@ -1,0 +1,7 @@
+com\zidio\taskmanagement\config\WebConfig$1.class
+com\zidio\taskmanagement\config\WebConfig.class
+com\zidio\taskmanagement\model\Role.class
+com\zidio\taskmanagement\model\User.class
+com\zidio\taskmanagement\config\SecurityConfig.class
+com\zidio\taskmanagement\TaskManagementApplication.class
+com\zidio\taskmanagement\controller\AuthController.class

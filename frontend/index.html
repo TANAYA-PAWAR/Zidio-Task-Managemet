@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zidio Task Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Authentication Section -->
+    <div id="authContainer">
+        <h2>Login / Sign Up</h2>
+        <input type="text" id="authUsername" placeholder="Username">
+        <input type="password" id="authPassword" placeholder="Password">
+        <button onclick="signup()">Sign Up</button>
+        <button onclick="login()">Login</button>
+        <p id="authMessage"></p>
+    </div>
+
+    <!-- Task Management Section (Initially Hidden) -->
+    <div id="taskContainer" class="hidden">
+        <h1>Zidio Task Management</h1>
+
+        <div class="task-input">
+            <input type="text" id="taskTitle" placeholder="Task title">
+            <input type="text" id="taskAssignee" placeholder="Assign to">
+            <input type="date" id="taskDeadline">
+            <button onclick="addTask()">Add Task</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+        <div class="kanban-board">
+            <div class="kanban-column" id="todoColumn">
+                <h2>To Do</h2>
+                <ul id="todoList"></ul>
+            </div>
+            <div class="kanban-column" id="inProgressColumn">
+                <h2>In Progress</h2>
+                <ul id="inProgressList"></ul>
+            </div>
+            <div class="kanban-column" id="doneColumn">
+                <h2>Done</h2>
+                <ul id="doneList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
